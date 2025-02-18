@@ -1,0 +1,18 @@
+package ej03;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Academia academia1=new Academia();
+		Academia academia2=new Academia();
+		System.out.println("RELLENAR ACADEMIA 1: ");
+		academia1.rellenar();
+		System.out.println("RELLENAR ACADEMIA 2:");
+		academia2.rellenar();
+		System.out.println("VISUALIZAR ACADEMIA 1: ");
+		academia1.visualizar();
+		System.out.println("VISUALIZAR ACADEMIA 2: ");
+		academia2.visualizar();
+	}
+
+}

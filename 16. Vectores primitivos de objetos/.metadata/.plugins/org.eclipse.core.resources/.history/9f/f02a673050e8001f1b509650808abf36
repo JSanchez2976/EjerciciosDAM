@@ -1,0 +1,23 @@
+package ej02;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.print("Cuantos alumnos vas a meter como maximo: ");
+		int n = in.nextInt();
+		Alumno[] alumnos = new Alumno[n];
+		System.out.println("MENU\r\n" + "1. Rellenar alumnos\r\n" + "2. Ver todos los alumnos\r\n"
+				+ "3. Consultar alumno por apellido (binaria)\r\n" + "4. Ordenar por apellidos\r\n" + "5. Salir.\r\n");
+		System.out.print("Elegir opción: ");
+		int opcion = in.nextInt();
+		switch (opcion) {
+		case 1:
+			
+		}
+		in.close();
+	}
+
+}

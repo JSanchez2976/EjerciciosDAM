@@ -1,0 +1,6 @@
+package ej03;
+
+public class Curso {
+	private String nombreCurso;
+	private Persona profesor;
+}

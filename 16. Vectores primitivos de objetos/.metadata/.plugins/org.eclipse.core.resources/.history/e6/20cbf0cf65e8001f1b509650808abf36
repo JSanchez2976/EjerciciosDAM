@@ -1,0 +1,62 @@
+package ej03;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Academia {
+	private String nombre;
+	private String direccion;
+	private Curso[] cursos;
+	
+	public Academia() {
+	}
+
+	public Academia(String nombre, String direccion, Curso[] cursos) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.cursos = cursos;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public Curso[] getCursos() {
+		return cursos;
+	}
+
+	public void setCursos(Curso[] cursos) {
+		this.cursos = cursos;
+	}
+
+	@Override
+	public String toString() {
+		return "Academia [nombre=" + nombre + ", direccion=" + direccion + ", cursos=" + Arrays.toString(cursos) + "]";
+	}
+	
+	public void rellenar() {
+		Scanner in=new Scanner(System.in);
+		System.out.print("Nombre = ");
+		nombre=in.nextLine();
+		System.out.print("Direccion =");
+		direccion=in.nextLine();
+		//meter lo de rellenar curso
+	}
+	
+	public void visualizar() {
+		System.out.println("Nombre = "+nombre);
+		System.out.println("Direccion = "+direccion);
+	}
+}

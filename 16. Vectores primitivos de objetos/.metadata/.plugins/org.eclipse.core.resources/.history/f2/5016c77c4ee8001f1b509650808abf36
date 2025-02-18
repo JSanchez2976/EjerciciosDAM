@@ -1,0 +1,35 @@
+package ej01;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.print("Cuantos coches vas a meter: ");
+		int n = in.nextInt();
+		Coche[] coches = new Coche[n];
+		// rellenar todos los coches
+		for (int i = 0; i < coches.length; i++) {
+			coches[i] = new Coche();
+			coches[i].rellenar();
+		}
+		// visualizar todos los datos del concesionario
+		for (int i = 0; i < coches.length; i++) {
+			System.out.println("COCHE " + (i + 1) + ": ");
+			coches[i].visualizar();
+		}
+		// mostrar cantidad de la misma marca
+		in.nextLine();
+		System.out.print("Que marca quieres saber cuantas veces está: ");
+		String marca = in.nextLine();
+		int numeroVeces = Coche.cantidadModelosDeUnaMarca(marca, coches);
+		System.out.println("Veces encontrado: " + numeroVeces);
+		// lee de teclado un modelo y búscalo en su listado de coches.
+		// indica la posición de la lista en el que está y su marca y precio y si no muestra un mensaje informando que no existe el modelo
+		System.out.print("Que modelo quieres saber si está: ");
+		String modelo=in.nextLine();
+		Coche.buscarModelos(coches,modelo);
+		in.close();
+	}
+}

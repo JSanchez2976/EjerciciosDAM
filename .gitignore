@@ -24,7 +24,14 @@ hs_err_pid*
 replay_pid*
 
 # Configuración y caché del espacio de trabajo de Eclipse  
-.metadata/  
-.recommenders/  
+.settings/
+.metadata/
+.recommenders/
 
+# Archivos compilados de Eclipse
+bin/
+build/
 
+# Archivos de configuración de Eclipse
+.classpath
+.project

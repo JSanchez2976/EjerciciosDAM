@@ -1,7 +1,0 @@
-package ej03;
-
-public class Academia {
-	private String nombre;
-	private String direccion;
-	private Curso[] cursos;
-}

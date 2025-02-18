@@ -1,0 +1,28 @@
+package ej05;
+
+import java.util.Scanner;
+
+/*
+ * Declarar una clase de nombre Linea que contenga:
+Un atributo para guardar el numero
+Un metodo que permita imprimir una secuencia que consta de un número y tantos signos =
+como indique el atributo seguido por un signo +, cada uno en una línea. Por ejemplo: 4====+.
+Usar esta clase para crear tantas líneas como desee el usuario. Los números de la línea estarán
+comprendidos entre 1 y 10.
+ */
+public class Linea {
+	Scanner in=new Scanner(System.in);
+	
+	private int numero;
+	
+	public Linea() {
+	}
+	
+	public Linea(int numero) {
+		this.numero=numero;
+	}
+	public void crearLineas() {
+		System.out.print("Cuantas lineas vas a meter: ");
+		int lineas=in.nextInt();
+	}
+}

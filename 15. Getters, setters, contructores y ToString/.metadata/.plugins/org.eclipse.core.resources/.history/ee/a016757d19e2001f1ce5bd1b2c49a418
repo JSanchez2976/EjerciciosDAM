@@ -1,0 +1,11 @@
+package ej06;
+/*
+ * 6. Crea una clase de nombre Tabla que contenga:
+Atributo: un número,
+constructor para inicializar a cero y otro para darle un valor,
+Método que muestre su tabla de multiplicar y un método toString().
+Desde el main pide un número y muestra su tabla.
+ */
+public class Tabla {
+	private int numero;
+}

@@ -1,0 +1,11 @@
+package ej05;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Linea linea1=new Linea(6);
+		System.out.print(linea1.crearLineas());
+
+	}
+
+}

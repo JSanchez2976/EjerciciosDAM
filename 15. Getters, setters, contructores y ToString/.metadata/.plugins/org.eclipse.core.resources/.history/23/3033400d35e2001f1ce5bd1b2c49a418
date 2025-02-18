@@ -1,0 +1,24 @@
+package ej09;
+
+public class Tabla {
+	private int numero;
+	public Tabla() {
+	}
+	public Tabla(int numero) {
+		this.numero=numero;
+	}
+	@Override
+	public String toString() {
+		return "Tabla [numero=" + numero + "]";
+	}
+	
+	public void mostrarTablaMultiplicar(int numero1, int numero2) {
+		for (int i = numero1; numero1>numero2; i--) {
+			for (int j = 1; j <= 10; j++) {
+				System.out.println(j+" * "+numero+" = "+(j*numero));
+			}
+		}
+		
+	}
+	
+}

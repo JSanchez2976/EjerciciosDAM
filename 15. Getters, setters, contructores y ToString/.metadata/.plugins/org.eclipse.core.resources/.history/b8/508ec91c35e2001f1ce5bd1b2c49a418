@@ -1,0 +1,17 @@
+package ej09;
+
+import java.util.Scanner;
+
+/*
+ * Escribir un programa que permita escribir todas las tablas de multiplicar entre dos números
+introducidos por teclado. Usar la clase del ejercicio 6.
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		
+		in.close();
+	}
+
+}
